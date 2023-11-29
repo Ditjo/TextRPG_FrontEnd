@@ -1,7 +1,7 @@
-export interface Armour{
+export interface PotionType{
     id: number;
-    armourTypeName: string | null;
-    armourModifier: number;
+    potionTypeNUmber: string | null;
+    potionDice: number;
     availableToHero: boolean;
     value: number;
     note: string | null;
