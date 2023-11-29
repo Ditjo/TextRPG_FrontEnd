@@ -5,13 +5,14 @@ import { CharacterSelectorComponent } from './components/character-selector/char
 import { OptionsComponent } from './components/options/options.component';
 
 export const routes: Routes = [
-    {path:'mainmenu', component: MainmenuComponent, children: [
-        {path:'character-creator', component: CharacterCreatorComponent},
-        {path:'charactor-selector', component: CharacterSelectorComponent},
-        {path:'options', component: OptionsComponent},
-    ]},
-    // {path:'character-creator', component: CharacterCreatorComponent},
-    // {path:'charactor-selector', component: CharacterSelectorComponent},
-    // {path:'options', component: OptionsComponent},
+    // {path:'mainmenu', component: MainmenuComponent, children: [
+    //     {path:'character-creator', component: CharacterCreatorComponent},
+    //     {path:'charactor-selector', component: CharacterSelectorComponent},
+    //     {path:'options', component: OptionsComponent},
+    // ]},
+    {path:'mainmenu', component: MainmenuComponent},
+    {path:'character-creator', component: CharacterCreatorComponent},
+    {path:'charactor-selector', component: CharacterSelectorComponent},
+    {path:'options', component: OptionsComponent},
     {path:'', redirectTo: 'mainmenu', pathMatch:'full'},
 ];
